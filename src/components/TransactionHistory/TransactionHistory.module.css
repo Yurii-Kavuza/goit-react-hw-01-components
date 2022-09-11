@@ -1,0 +1,9 @@
+.head {
+  background-color: #00bcd5;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+th {
+  padding: 10px 50px;
+}

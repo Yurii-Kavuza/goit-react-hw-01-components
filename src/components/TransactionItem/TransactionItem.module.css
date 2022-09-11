@@ -1,0 +1,13 @@
+.transaction {
+  /* text-align: center; */
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+.transaction:nth-child(2n) {
+  background-color: #ecf1f4;
+}
+
+td {
+  padding: 10px 50px;
+}
