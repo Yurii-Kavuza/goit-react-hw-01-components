@@ -8,7 +8,7 @@ export const ListItem = styled.li`
   gap: ${p => p.theme.space[3]}px;
   flex-basis: 33.33%;
   padding: ${p => p.theme.space[4]}px;
-  border: ${p => p.theme.borders.normal}${p => p.theme.colors.border};
+  border: ${p => p.theme.borders.normal} ${p => p.theme.colors.border};
 `;
 
 export const Label = styled.span`
@@ -17,5 +17,5 @@ export const Label = styled.span`
 
 export const Quantity = styled.span`
   font-weight: ${p => p.theme.fontWeights.bold};
-  color: ${p => p.theme.colors.text2} #2e2e2e;
+  color: ${p => p.theme.colors.text2};
 `;

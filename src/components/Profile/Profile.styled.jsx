@@ -41,7 +41,7 @@ export const Avatar = styled.img`
 export const Username = styled.p`
   color: ${p => p.theme.colors.text};
   font-size: ${p => p.theme.space[4]}px;
-  font-weight: 700;
+  font-weight: ${p => p.theme.fontWeights.bold};
 `;
 export const Tag = styled.p`
   color: ${p => p.theme.colors.text2};
