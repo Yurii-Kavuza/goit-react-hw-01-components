@@ -1,7 +1,0 @@
-.stats__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 33.33%;
-}

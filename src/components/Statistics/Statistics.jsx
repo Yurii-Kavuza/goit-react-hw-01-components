@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import { StatisticsItem } from 'components/StatisitcsItem/StatisticsItem';
-import css from './Statistics.module.css';
+import { getRandomHexColor } from 'utils/randomColor';
+import { Stats, StatsList, Title } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
-
-      <ul className={css.statList}>
+    <Stats>
+      {title && <Title>{title}</Title>}
+      <StatsList>
         {stats.map(({ id, label, percentage }) => {
           return (
             <StatisticsItem
@@ -15,11 +15,12 @@ export const Statistics = ({ title, stats }) => {
               id={id}
               label={label}
               percentage={percentage}
+              color={getRandomHexColor(id)}
             />
           );
         })}
-      </ul>
-    </section>
+      </StatsList>
+    </Stats>
   );
 };
 

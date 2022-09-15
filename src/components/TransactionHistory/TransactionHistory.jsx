@@ -1,19 +1,18 @@
 import PropTypes from 'prop-types';
 import { TransactionItem } from 'components/TransactionItem/TransactionItem';
-import css from './TransactionHistory.module.css';
+import { Head, Body, Table, HeadRow, Cell } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ transactions }) => {
   return (
-    <table className="transactionHistory">
-      <thead>
-        <tr className={css.head}>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
-
-      <tbody>
+    <Table>
+      <Head>
+        <HeadRow>
+          <Cell>Type</Cell>
+          <Cell>Amount</Cell>
+          <Cell>Currency</Cell>
+        </HeadRow>
+      </Head>
+      <Body>
         {transactions.map(({ id, type, amount, currency }) => {
           return (
             <TransactionItem
@@ -24,8 +23,8 @@ export const TransactionHistory = ({ transactions }) => {
             />
           );
         })}
-      </tbody>
-    </table>
+      </Body>
+    </Table>
   );
 };
 

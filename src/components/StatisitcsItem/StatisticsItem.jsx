@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-import css from './StatisticsItem.module.css';
+import { Label, ListItem, Percentage } from './StatisticsItem.styled';
 
-export const StatisticsItem = ({ id, label, percentage }) => {
+export const StatisticsItem = ({ id, label, percentage, color }) => {
   return (
-    <li className={css.item} key={id}>
-      <span className="label">{label}</span>
-      <span className="percentage">{`${percentage} %`}</span>
-    </li>
+    <ListItem key={id} color={color}>
+      <Label>{label}</Label>
+      <Percentage>{`${percentage} %`}</Percentage>
+    </ListItem>
   );
 };
 

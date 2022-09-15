@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
-
-import css from './ProfileStats.module.css';
+import { Label, ListItem, Quantity } from './ProfileStats.styled';
 
 export const ProfileStats = ({ name, data }) => {
   return (
-    <li className={css.stats__item} key={name}>
-      <span className="label">{name}</span>
-      <span className="quantity">{data}</span>
-    </li>
+    <ListItem key={name}>
+      <Label>{name}</Label>
+      <Quantity>{data}</Quantity>
+    </ListItem>
   );
 };
 
