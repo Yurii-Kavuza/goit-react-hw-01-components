@@ -6,8 +6,8 @@ export const Table = styled.table`
 `;
 
 export const Head = styled.thead`
-  background-color: #00bcd5;
-  color: #fff;
+  background-color: ${p => p.theme.colors.primary};
+  color:${p => p.theme.colors.white};
 `;
 
 export const HeadRow = styled.tr`
@@ -17,5 +17,5 @@ export const HeadRow = styled.tr`
 export const Body = styled.tbody``;
 
 export const Cell = styled.th`
-  padding: 10px 50px;
+  padding: ${p => p.theme.space[3]}px ${p => p.theme.space[5]}px;
 `;
