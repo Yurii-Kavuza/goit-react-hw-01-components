@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: ${p => p.theme.space[4]}px;
   width: 400px;
   overflow: hidden;
   display: flex;
